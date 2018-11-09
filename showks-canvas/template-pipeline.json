@@ -1,0 +1,60 @@
+{
+ "application": "showks-canvas-jyoshise",
+ "expectedArtifacts": [
+  {
+   "defaultArtifact": {
+    "id": "showks-canvas-jyoshise-defaultArtifact",
+    "kind": "custom"
+   },
+   "id": "showks-canvas-jyoshise-manifest",
+   "matchArtifact": {
+    "id": "showks-canvas-jyoshise-manifest-github",
+    "kind": "github",
+    "name": "manifests/deployment.yml",
+    "type": "github/file"
+   },
+   "useDefaultArtifact": false,
+   "usePriorArtifact": true
+  }
+ ],
+ "id": "showks-canvas-jyoshise-pipeline",
+ "index": 0,
+ "keepWaitingPipelines": false,
+ "lastModifiedBy": "showks.containerdaysjp@gmail.com",
+ "limitConcurrent": true,
+ "name": "deploy-to-staging",
+ "stages": [
+  {
+   "account": "showks-cluster-stg-account",
+   "cloudProvider": "kubernetes",
+   "manifestArtifactAccount": "showks-github-artifact-account",
+   "manifestArtifactId": "showks-canvas-jyoshise-manifest",
+   "moniker": {
+    "app": "showks-portal"
+   },
+   "name": "Deploy (Manifest)",
+   "refId": "1",
+   "relationships": {
+    "loadBalancers": [],
+    "securityGroups": []
+   },
+   "requisiteStageRefIds": [],
+   "source": "artifact",
+   "type": "deployManifest"
+  }
+ ],
+ "triggers": [
+  {
+   "branch": "staging",
+   "enabled": false,
+   "expectedArtifactIds": [
+    "showks-canvas-jyoshise-manifest"
+   ],
+   "project": "containerdaysjp",
+   "secret": "showks-spinnaker-secret",
+   "slug": "showks-canvas-jyoshise",
+   "source": "github",
+   "type": "git"
+  }
+ ]
+}
