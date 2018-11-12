@@ -19,7 +19,7 @@ def main():
     with open(args.template) as f:
         df = json.load(f)
 
-    APPNAME = 'showks-canvas' + args.id
+    APPNAME = 'showks-canvas-' + args.id
 
     df['application'] = APPNAME
     df['expectedArtifacts'][0]['defaultArtifact']['id'] = APPNAME + '-defaultArtifact'
