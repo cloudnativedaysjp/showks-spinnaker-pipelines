@@ -1,0 +1,17 @@
+{
+ "attributes": {
+  "cloudProviders": "kubernetes",
+  "dataSources": {
+   "disabled": [],
+   "enabled": []
+  },
+  "email": "showks.containerdaysjp@gmail.com",
+  "instancePort": 80,
+  "lastModifiedBy": "showks.containerdaysjp@gmail.com",
+  "name": "showks-canvas-jyoshise",
+  "repoProjectKey": "",
+  "user": "showks.containerdaysjp@gmail.com"
+ },
+ "clusters": {},
+ "name": "showks-canvas-jyoshise"
+}
