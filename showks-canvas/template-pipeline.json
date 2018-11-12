@@ -1,14 +1,14 @@
 {
- "application": "showks-canvas-jyoshise",
+ "application": "showks-canvas-hogehoge",
  "expectedArtifacts": [
   {
    "defaultArtifact": {
-    "id": "showks-canvas-jyoshise-defaultArtifact",
+    "id": "showks-canvas-hogehoge-defaultArtifact",
     "kind": "custom"
    },
-   "id": "showks-canvas-jyoshise-manifest",
+   "id": "showks-canvas-hogehoge-manifest",
    "matchArtifact": {
-    "id": "showks-canvas-jyoshise-manifest-github",
+    "id": "showks-canvas-hogehoge-manifest-github",
     "kind": "github",
     "name": "manifests/deployment.yml",
     "type": "github/file"
@@ -17,7 +17,7 @@
    "usePriorArtifact": true
   }
  ],
- "id": "showks-canvas-jyoshise-pipeline",
+ "id": "showks-canvas-hogehoge-pipeline",
  "index": 0,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "showks.containerdaysjp@gmail.com",
@@ -28,7 +28,7 @@
    "account": "showks-cluster-stg-account",
    "cloudProvider": "kubernetes",
    "manifestArtifactAccount": "showks-github-artifact-account",
-   "manifestArtifactId": "showks-canvas-jyoshise-manifest",
+   "manifestArtifactId": "showks-canvas-hogehoge-manifest",
    "moniker": {
     "app": "showks-portal"
    },
@@ -48,11 +48,11 @@
    "branch": "staging",
    "enabled": false,
    "expectedArtifactIds": [
-    "showks-canvas-jyoshise-manifest"
+    "showks-canvas-hogehoge-manifest"
    ],
    "project": "containerdaysjp",
    "secret": "showks-spinnaker-secret",
-   "slug": "showks-canvas-jyoshise",
+   "slug": "showks-canvas-hogehoge",
    "source": "github",
    "type": "git"
   }
