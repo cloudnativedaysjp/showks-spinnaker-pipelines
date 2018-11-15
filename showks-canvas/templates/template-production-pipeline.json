@@ -46,7 +46,7 @@
  "triggers": [
   {
    "branch": "master",
-   "enabled": false,
+   "enabled": true,
    "expectedArtifactIds": [
     "showks-canvas-hogehoge-manifest"
    ],
