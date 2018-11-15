@@ -1,0 +1,61 @@
+{
+ "application": "showks-aggregator",
+ "expectedArtifacts": [
+  {
+   "defaultArtifact": {
+    "id": "52e3f66a-8fc0-47c1-9a39-4a35552bccef",
+    "kind": "custom"
+   },
+   "id": "117aab22-75c6-4a6c-a69d-4a050f0ff4b3",
+   "matchArtifact": {
+    "id": "91899944-0c9b-4f12-8d3a-f1a15248312d",
+    "kind": "github",
+    "name": "manifests/showks-aggregator/manifest.yaml",
+    "type": "github/file"
+   },
+   "useDefaultArtifact": false,
+   "usePriorArtifact": false
+  }
+ ],
+ "id": "8527d2c4-e8cd-4e09-98e0-076ecc44f0a1",
+ "index": 1,
+ "keepWaitingPipelines": false,
+ "lastModifiedBy": "showks.containerdaysjp@gmail.com",
+ "limitConcurrent": true,
+ "name": "deploy-to-production",
+ "stages": [
+  {
+   "account": "showks-cluster-prod-account",
+   "cloudProvider": "kubernetes",
+   "manifestArtifactAccount": "showks-github-artifact-account",
+   "manifestArtifactId": "117aab22-75c6-4a6c-a69d-4a050f0ff4b3",
+   "moniker": {
+    "app": "showks-aggregator"
+   },
+   "name": "Deploy (Manifest)",
+   "refId": "1",
+   "relationships": {
+    "loadBalancers": [],
+    "securityGroups": []
+   },
+   "requisiteStageRefIds": [],
+   "source": "artifact",
+   "type": "deployManifest"
+  }
+ ],
+ "triggers": [
+  {
+   "branch": "master",
+   "enabled": true,
+   "expectedArtifactIds": [
+    "117aab22-75c6-4a6c-a69d-4a050f0ff4b3"
+   ],
+   "project": "containerdaysjp",
+   "secret": "showks-spinnaker-secret",
+   "slug": "showks-manifests",
+   "source": "github",
+   "type": "git"
+  }
+ ],
+ "updateTs": "1542259333466"
+}

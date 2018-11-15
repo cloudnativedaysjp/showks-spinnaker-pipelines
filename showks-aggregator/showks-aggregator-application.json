@@ -1,0 +1,14 @@
+{
+ "attributes": {
+  "cloudProviders": "kubernetes",
+  "createTs": "1542258711448",
+  "email": "showks.containerdaysjp@gmail.com",
+  "instancePort": 80,
+  "lastModifiedBy": "showks.containerdaysjp@gmail.com",
+  "name": "showks-aggregator",
+  "updateTs": "1542258711708",
+  "user": "showks.containerdaysjp@gmail.com"
+ },
+ "clusters": {},
+ "name": "showks-aggregator"
+}

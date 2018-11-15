@@ -1,0 +1,19 @@
+{
+ "attributes": {
+  "cloudProviders": "kubernetes",
+  "createTs": "1541010180662",
+  "dataSources": {
+   "disabled": [],
+   "enabled": []
+  },
+  "email": "showks.containerdaysjp@gmail.com",
+  "instancePort": 80,
+  "lastModifiedBy": "showks.containerdaysjp@gmail.com",
+  "name": "showks-portal",
+  "repoProjectKey": "",
+  "updateTs": "1541483861079",
+  "user": "showks.containerdaysjp@gmail.com"
+ },
+ "clusters": {},
+ "name": "showks-portal"
+}
