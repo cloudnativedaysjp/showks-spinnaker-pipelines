@@ -1,4 +1,4 @@
-# Generate showks-canvas applicatio and pipelines into Spinnaker
+# Generate showks-canvas application and pipelines into Spinnaker
 
 ## Usage
 
