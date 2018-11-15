@@ -1,0 +1,8 @@
+gate:
+  endpoint: https://spinnaker-api.showks.containerdays.jp
+auth:
+  enabled: true
+  x509:
+    certPath: "~/.spin/client.crt"
+    keyPath: "~/.spin/key.out"
+
