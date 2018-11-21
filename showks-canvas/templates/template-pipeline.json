@@ -1,36 +1,36 @@
 {
- "application": "showks-canvas-hogehoge",
+ "application": "showks-canvas-ID",
  "expectedArtifacts": [
   {
    "defaultArtifact": {
-    "id": "showks-canvas-hogehoge-defaultArtifact",
+    "id": "showks-canvas-ID-STAGE-defaultArtifact",
     "kind": "custom"
    },
-   "id": "showks-canvas-hogehoge-manifest",
+   "id": "showks-canvas-ID-STAGE-manifest",
    "matchArtifact": {
-    "id": "showks-canvas-hogehoge-manifest-github",
+    "id": "showks-canvas-ID-STAGE-manifest-github",
     "kind": "github",
-    "name": "manifests/deployment.yml",
+    "name": "manifests/showks-canvas-ID/manifest.yaml",
     "type": "github/file"
    },
    "useDefaultArtifact": false,
    "usePriorArtifact": true
   }
  ],
- "id": "showks-canvas-hogehoge-pipeline",
+ "id": "showks-canvas-ID-STAGE-pipeline",
  "index": 0,
  "keepWaitingPipelines": false,
  "lastModifiedBy": "showks.containerdaysjp@gmail.com",
  "limitConcurrent": true,
- "name": "deploy-to-staging",
+ "name": "deploy-to-STAGE",
  "stages": [
   {
-   "account": "showks-cluster-stg-account",
+   "account": "showks-cluster-STAGE-account",
    "cloudProvider": "kubernetes",
    "manifestArtifactAccount": "showks-github-artifact-account",
-   "manifestArtifactId": "showks-canvas-hogehoge-manifest",
+   "manifestArtifactId": "showks-canvas-ID-STAGE-manifest",
    "moniker": {
-    "app": "showks-portal"
+    "app": "showks-canvas-ID"
    },
    "name": "Deploy (Manifest)",
    "refId": "1",
@@ -45,14 +45,14 @@
  ],
  "triggers": [
   {
-   "branch": "staging",
+   "branch": "master",
    "enabled": true,
    "expectedArtifactIds": [
-    "showks-canvas-hogehoge-manifest"
+    "showks-canvas-ID-STAGE-manifest"
    ],
    "project": "containerdaysjp",
    "secret": "showks-spinnaker-secret",
-   "slug": "showks-canvas-hogehoge",
+   "slug": "showks-manifests-STAGE",
    "source": "github",
    "type": "git"
   }
