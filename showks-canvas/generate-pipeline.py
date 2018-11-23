@@ -35,7 +35,7 @@ def main():
     df['stages'][0]['manifestArtifactId'] = DEPNAME + '-manifest'
     df['stages'][0]['moniker']['app'] = APPNAME
     df['triggers'][0]['expectedArtifactIds'][0] = DEPNAME + '-manifest'
-    df['triggers'][0]['slug'] = 'showks-manifest-' + STAGE #GitHub Repo Name
+    df['triggers'][0]['slug'] = 'showks-manifests-' + STAGE #GitHub Repo Name
 
     with open(args.outfile, 'w') as of:
         json.dump(df, of, indent=2)
